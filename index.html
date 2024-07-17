@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Student Community Day - Kenya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Meta tags for SEO and social sharing -->
+    <meta name="description" content="Join us for the AWS Student Community Day in Kenya.">
+    <meta name="keywords" content="AWS, Student Community, Kenya, technology, networking">
+    <meta name="author" content="Clinton">
+
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="AWS Student Community Day - Kenya">
+    <meta property="og:description" content="Join us for the AWS Student Community Day in Kenya.">
+    <meta property="og:image" content="link_to_your_image.jpg"> <!-- Replace with actual image link -->
+    <meta property="og:url" content="http://www.awsstudentcommunitykenya.co.ke">
+
+    <!-- Twitter card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AWS Student Community Day - Kenya">
+    <meta name="twitter:description" content="Join us for the AWS Student Community Day in Kenya.">
+    <meta name="twitter:image" content="link_to_your_imag.jpg"> <!-- Replace with actual image link -->
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="ii/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="ii/android-chrome-512x512.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="ii/apple-touch-icon.png">
+    
+    <!-- Standard Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="ii/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ii/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="ii/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Manifest for Android Chrome -->
+    <link rel="manifest" href="ii/site.webmanifest">
+</head>
+
+
+<body>
+
+    <header>
+        <!-- <button class="hamburger">&#9776;</button> -->
+        <div class="hamburger sticky">
+            <span class="material-symbols--menu"></span>
+        </div>
+
+        <nav class="menu sticky sticky-mobile">
+            <ul class="nav-bar">
+                <div class="nav-links nav-links-mobile">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mapp">Venue</a></li>
+                    <li><a href="#about">Agenda</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#cardd">Tickets</a></li>
+                    <!-- <li><a href="index.htmlTeam.html">Team</a></li>-->
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><button class="register-btn hide" id="register-btn"><a href="#cardd">Register</a></button></li>
+                </div>
+                <div class="nav-button nav-links hide-mobile">
+                    <li><button class="register-btn"><a href="#cardd">Register</a></button></li>
+                </div>
+
+            </ul>
+        </nav>
+        <script>
+            window.onload = function () {
+                history.replaceState("", document.title, window.location.pathname);
+            };
+        </script>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+
+                <h1 class="hero-tag work-sans-bold ">
+                    Welcome to
+                    <span class="blink work-sans-bold "
+                        style="color:  rgb(236, 138, 194); font-weight: 700; font-style: Bold;  font-size: 2.5rem;">AWS
+                        <br> Student Community</span> <br>
+                    Day - Kenya
+                </h1>
+                <p class="event-info work-sans-bold "><span class="date-icon"><img src="img/vector2582-fi4.svg" alt=""></span> 28th
+                    September 2024 &nbsp; <span class="location-icon"><img src="img/vector2582-zkvg.svg" alt=""></span>
+                    Nairobi, Kenya</p>
+                <br>
+                <div class="event-details">
+                    <div class="detail-item work-sans-medium"><strong>Attendees</strong> <br> <strong
+                            style="font-size: 40px;">200+</strong></div>
+                    <div class="detail-item work-sans-medium "><strong>Speakers</strong> <br> <strong style="font-size: 40px;">10</strong>
+                    </div>
+                    <div class="detail-item work-sans-medium"><strong>Talks</strong> <br><strong style="font-size: 40px;">9</strong>
+                    </div>
+                </div>
+
+                <h1>Event Starts In:</h1>
+                <div class="countdown-timer">
+                    <div class="time-box">
+                        <span id="days" class="time-number">30</span>
+                        <span class="time-label">DAYS</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="hours" class="time-number">12</span>
+                        <span class="time-label">HOURS</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="minutes" class="time-number">44</span>
+                        <span class="time-label">MINS</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="seconds" class="time-number">25</span>
+                        <span class="time-label">SECS</span>
+                    </div>
+                </div>
+                <br><br><br>
+
+                <button class="register-btn"><a href="#cardd">Register</a></button>
+
+
+            </div>
+            <script>
+                $('a[href^="#"]').on('click', function (event) {
+                    var target = $(this.getAttribute('href'));
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').stop().animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            </script>
+
+
+
+            <div class="hero-image">
+                <img src="img/Home.webp" alt="Event Illustration">
+
+            </div>
+
+        </section>
+        <section id="about">
+            <div class="about">
+                <span>
+                    <h2 class="work-sans-medium" style="color:black; font-weight: 700; font-size: 52px;">About The Event</h2>
+                </span>
+                <div class="event">
+                    <div class="images">
+                        <!-- <div class="image-container">
+                            <img src="img/Screenshot 2024-05-20 205018.png" alt="">
+                        </div> -->
+                    </div>
+                    <div class="event-detail">
+
+                        <div class="detailpara">
+                            <h1 class="work-sans-medium "><img src="/mark.svg" alt="">Purpose:</h1>
+                        
+                                <p class="work-sans-regular"> Empower students with AWS technology.</p>
+                                <p class="work-sans-regular">Enhance skills and introduce AWS trends.</p>
+                                <p class="work-sans-regular">Foster connections with industry professionals and mentors.</p>
+                          </div>
+                    
+                      <div class="detailpara">
+                        <h1 class="work-sans-medium "><img src="/mark.svg" alt="">Opportunities for Students:</h1>
+                    
+                            <p class="work-sans-regular"> Skill enhancement with AWS’s latest tech.</p>
+                            <p class="work-sans-regular">Networking with industry leaders and mentors.</p>
+                      </div>
+                      <div class="detailpara">
+                        <h1 class="work-sans-medium "><img src="/mark.svg" alt="">Event Hosts:</h1>
+                    
+                            <p class="work-sans-regular"> Organized by AWS Cloud Clubs.</p>
+                            <p class="work-sans-regular">NHosted by Strathmore University and Multimedia University, Kenya.</p>
+                      </div>
+                      >
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section id="agenda">
+            <div class="agenda-container">
+                <table class="agenda-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Session Title & Track</th>
+                            <th>Speaker(s)</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Time"><strong>9:00 am - 9:30 am</strong></td>
+                            <td data-label="Session Title & Track">Welcome & opening remarks</td>
+                            <td data-label="Speaker(s)">AWS Student Community Kenya Team</td>
+                            <td data-label="Description">—</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>9:30 am - 10:30 am</strong></td>
+                            <td data-label="Session Title & Track">Cloud Computing Fundamentals <br> (Beginner Track)
+                            </td>
+                            <td data-label="Speaker(s)">John Doe, AWS Cloud Architect</td>
+                            <td data-label="Description">This session provides a fundamental <br> understanding of cloud
+                                computing concepts...</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>10:30 am - 11:00 am</strong></td>
+                            <td data-label="Session Title & Track">Coffee break & networking</td>
+                            <td data-label="Speaker(s)">—</td>
+                            <td data-label="Description">—</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>11:00 am - 12:00 pm</strong></td>
+                            <td data-label="Session Title & Track">Deep dive into Amazon S3 <br> (Intermediate Track)
+                            </td>
+                            <td data-label="Speaker(s)">Jane Smith, Sr. Solutions Architect, AWS</td>
+                            <td data-label="Description">This session dives deeper <br> into Amazon s3...</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>12:00 am - 1:00 pm</strong></td>
+                            <td data-label="Session Title & Track">Lunch Break</td>
+                            <td data-label="Speaker(s)">—</td>
+                            <td data-label="Description">—</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>1:00 pm - 2:00 pm</strong></td>
+                            <td data-label="Session Title & Track">Building serverless applications with AWS Lambda <br>
+                                (Advanced Track)</td>
+                            <td data-label="Speaker(s)">David Kim, Cloud Security Engineer, AWS</td>
+                            <td data-label="Description">Explore the world of serverless <br> computing with AWS
+                                Lambda...</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>1:00 pm - 2:00 pm</strong></td>
+                            <td data-label="Session Title & Track">Building serverless applications with AWS Lambda
+                                <br>(Advanced Track)</td>
+                            <td data-label="Speaker(s)">David Kim, Cloud Security Engineer, AWS</td>
+                            <td data-label="Description">Explore the world of serverless <br> computing with AWS
+                                Lambda...</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>2:00 pm - 3:00 pm</strong></td>
+                            <td data-label="Session Title & Track">Workshop: Hands-on with AWS Cloud <br> (All Levels)
+                            </td>
+                            <td data-label="Speaker(s)">AWS Student Community Kenya Team</td>
+                            <td data-label="Description">Get hands-on experience with the <br> AWS cloud platform ...
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>3:00 pm - 3:30 pm</strong></td>
+                            <td data-label="Session Title & Track">Career panel Building your future in the Cloud</td>
+                            <td data-label="Speaker(s)">Moderator, AWS Student Kenya Community Team Lead</td>
+                            <td data-label="Description">Gain insights from experienced cloud <br> professionals...</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Time"><strong>3:30 pm - 4:00 pm</strong></td>
+                            <td data-label="Session Title & Track">Closing remarks & next steps</td>
+                            <td data-label="Speaker(s)">AWS Student Community <br> Kenya Team</td>
+                            <td data-label="Description">.....</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>-->
+
+        <section id="mapp">
+            <div class="container-map">
+
+                <div class="details">
+                    <h2 class="work-sans-medium">VENUE</h2>
+                    <h1 class="work-sans-bold">Find us Here</h1>
+                    <p class="work-sans-regular">The event is happening at a location that fosters creativity and innovation. Mark your calendars
+                        and get ready to learn at:</p>
+                    <p class="work-sans-regular"><a href="https://maps.app.goo.gl/M77zDBFF3gqmzEUGA" target="_blank">Strathmore University
+                            Nairobi, Kenya</a></p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.
+                    7771738203464!2d36.80947437489218!3d-1.3089601986786097!2m3!1f0!2f0!3f0!3m2
+                    !1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112e9eff4827%3A0x17a918597484c8ea!2sSt
+                    rathmore%20University!5e0!3m2!1sen!2ske!4v1717177195456!5m2!1sen!2ske" width="400" height="300"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="cardd">
+            <div class="container">
+                <h1 class="title">Tickets</h1>
+                <h2 class="subtitle">Secure Your Spot</h2>
+                <div class="cards">
+                    <div class="card">
+                        <span class="mdi--gear"></span>
+                        <h3 class="card-title"><strong>Early Bird</strong></h3>
+                        <ul class="card-content">
+                            <li>
+                                <p><strong>Availability:</strong> Only 100 tickets available</p>
+                            </li>
+                            <li>
+                                <p><strong>Price:</strong> 250/= per ticket</p>
+                            </li>
+                            <li>
+                                <p><strong>Closing on 31st July</strong></p>
+                            </li> <br>
+
+                            <button class="buy-ticket">
+                                <a
+                                    href="https://awsstudentscommunitydaykenya2024-vv93vz.shop.chpter.co/product/7e90f96c-cec2-4c58-88ea-ca99fd8b01f4">
+                                    Buy Ticket
+                                </a>
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <span class="ic--sharp-emoji-objects"></span>
+                        <h2>Advance </h2>
+                        <ul class="card-content">
+                            <p><strong>Availability:</strong> Only 55 tickets available</p>
+                            <p><strong>Price:</strong> 350/= per ticket</p>
+                            <p><strong>Closing on 10th September</strong> </p>
+                            <br>
+                            <div id="countdownAdvance" class="countdown" style="color: #1D75E9;"></div>
+                            <!-- Countdown timer placeholder -->
+                            <button id="advanceBuyBtn" class="buy-ticket" style="display: none;">Buy Ticket</button>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <span class="arcticons--sbb-inclusive"></span>
+                        <h3 class="card-title">Regular </h3>
+                        <ul class="card-content">
+                            <p><strong>Availability:</strong> Only 50 tickets available</p>
+                            <p><strong>Price:</strong> 500/= per ticket</p>
+                            <p><strong>Closing on 20th September</strong> </p>
+                            <br>
+                            <div id="countdownRegular" class="countdown" style="color: #1D75E9;"></div>
+                            <!-- Countdown timer placeholder -->
+                            <button id="regularBuyBtn" class="buy-ticket" style="display: none;">Buy Ticket</button>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <span class="arcticons--sbb-inclusive1"></span>
+                        <h3 class="card-title">Group Tickets</h3>
+                        <ul class="card-content">
+                            <p><strong>Availability:</strong> Only 20 tickets available</p>
+                            <p><strong>Price:</strong> 1500/= per Group of 5</p>
+                            <p><strong>Closing on 20th September</strong> </p>
+                            <br>
+                            <div id="countdownGroup" class="countdown" style="color: #1D75E9;"></div>
+                            <!-- Countdown timer placeholder -->
+                            <button id="regularBuyBtn" class="buy-ticket" style="display: none;">Buy Ticket</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Function to calculate and display countdown timer with abbreviated units
+            function countdownTimer(targetDate, countdownElementId, buyButtonId) {
+                const targetTime = new Date(targetDate).getTime();
+                const countdownElement = document.getElementById(countdownElementId);
+                const buyButton = document.getElementById(buyButtonId);
+
+                function updateCountdown() {
+                    const currentTime = new Date().getTime();
+                    const distance = targetTime - currentTime;
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    countdownElement.innerHTML = `<strong>${days}D</strong> <strong>${hours}H</strong> <strong>${minutes}M</strong> <strong>${seconds}S</strong>`;
+
+                    if (distance < 0) {
+                        clearInterval(interval);
+                        countdownElement.innerHTML = "Tickets Launched!";
+                        buyButton.style.display = 'inline-block'; // Show the buy button when countdown ends
+                    }
+                }
+
+                updateCountdown(); // Initial call to update countdown immediately
+                const interval = setInterval(updateCountdown, 1000); // Update countdown every second
+            }
+
+            // Call countdownTimer for Advance Ticket and Regular Ticket
+            countdownTimer('2024-08-01T12:06:00Z', 'countdownAdvance', 'advanceBuyBtn'); // Replace '2024-08-01T00:00:00Z' with actual launch date/time
+            countdownTimer('2024-09-20T00:00:00Z', 'countdownRegular', 'regularBuyBtn'); // Replace '2024-09-20T00:00:00Z' with actual launch date/time
+            countdownTimer('2024-09-01T00:00:00Z', 'countdownGroup', 'groupBuyBtn'); // Replace '2024-09-20T00:00:00Z' with actual launch date/time
+        </script>
+
+
+        <!--<section id="speakers">
+            <h2 class="section-title">SPEAKERS</h2>
+            <h2 style="color:black; font-size: 30px;" class="section-title"><strong>Meet the Cloud
+                Experts</strong></h2>
+         <div class="carousel">
+            <div class="custom-speakers-container">
+                <div class="custom-speaker-card">
+                    <div class="custom-card-inner">
+                        <div class="custom-card-front">
+                            <img class="photo" src="img/photo4.png" alt="Speaker Photo">
+                            <h2>Clinton Gilly</h2>
+                            <button class="custom-button custom-flip-button">Tap to see more</button>
+                        </div>
+                        <div class="custom-card-back">
+                            <h3>Clinton Gilly</h3>
+                            <p>A Senior solutions architect at AWS, helping customers design and implement solutions that meet their specific business needs.</p>
+                            <div class="custom-social-links">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <button class="custom-button custom-flip-button">Back</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-speaker-card">
+                    <div class="custom-card-inner">
+                        <div class="custom-card-front">
+                            <img  class="photo" src="img/photo5.png" alt="Speaker Photo">
+                            <h2>Jane Doe</h2>
+                            <button class="custom-button custom-flip-button">Tap to see more</button>
+                        </div>
+                        <div class="custom-card-back">
+                            <h3>Jane Doe</h3>
+                            <p>Jane is a software engineer at Google, focusing on scalable web applications and cloud infrastructure.</p>
+                            <div class="custom-social-links">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <button class="custom-button custom-flip-button">Back</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-speaker-card">
+                    <div class="custom-card-inner">
+                        <div class="custom-card-front">
+                            <img class="photo" src="img/member-3.png" alt="Speaker Photo">
+                            <h2>John Smith</h2>
+                            <button class="custom-button custom-flip-button">Tap to see more</button>
+                        </div>
+                        <div class="custom-card-back">
+                            <h3>John Smith</h3>
+                            <p>John is a cybersecurity expert and the CTO of CyberSafe, with over 20 years of experience in the industry.</p>
+                            <div class="custom-social-links">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <button class="custom-button custom-flip-button">Back</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-speaker-card">
+                    <div class="custom-card-inner">
+                        <div class="custom-card-front">
+                            <img class="photo" class="img" src="img/photo3.png" alt="Speaker Photo">
+                            <h2>Mary Johnson</h2>
+                            <button class="custom-button custom-flip-button">Tap to see more</button>
+                        </div>
+                        <div class="custom-card-back">
+                            <h3>Mary Johnson</h3>
+                            <p>Mary is the CEO of Innovate Inc., driving forward innovative solutions in the tech industry.</p>
+                            <div class="custom-social-links">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <button class="custom-button custom-flip-button">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.querySelectorAll('.custom-flip-button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        button.closest('.custom-card-inner').classList.toggle('is-flipped');
+                    });
+                });
+            </script>
+        
+        </section>
+            
+                <br><br><br>
+                <!-- Sponsor Section -->
+        <!-- Sponsor Section -->
+        <!-- Sponsor Section -->
+        <section id="sponsors" class="sponsors">
+            <h2 style="padding-top: 70px;" class="section-title">SPONSORS</h2>
+            <h2 style="color:black; font-size: 30px;" class="section-title"><strong>Our Esteemed Sponsors</strong></h2>
+            <div class="carousel">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-slide">
+                                <div class="carousel-content">
+                                    <img class="carousel-image" src="img/MMU-logo.jpg" alt="Sponsor 1">
+                                    <p style="margin-top: 70px;">
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="carousel-content">
+                                    <img class="carousel-image" src="img/logo-AWS-removebg-preview.png" alt="Sponsor 2">
+                                    <p style="color:black; margin-top: 0px;"></p>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="carousel-content">
+                                    <img class="carousel-image" src="img/AWS-usergroup-Kenya.jpg" alt="Sponsor 3">
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="carousel-content">
+                                    <img class="carousel-image" src="img/Strathmore University Logo-01.png"
+                                        alt="Sponsor 4">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br>
+        <section>
+
+            <!-- <h2 class="section-title">TEAM</h2>
+                    <h2 style="color:black; font-size: 30px;" class="section-title"><strong>Meet the Team</strong></h2>
+                   
+                    <div class="carousel">
+                        <div class="custom-speakers-container">
+                            <div class="custom-speaker-card">
+                                <div class="custom-card-inner">
+                                    <div class="custom-card-front">
+                                        <img class="photo" src="img/photo4.png" alt="Speaker Photo">
+                                        <h2>Clinton Gilly</h2>
+                                        <button class="custom-button custom-flip-buttonn">Tap to see more</button>
+                                    </div>
+                                    <div class="custom-card-back">
+                                        <h3>Clinton Gilly</h3>
+                                        <p>A Senior solutions architect at AWS, helping customers design and implement solutions that meet their specific business needs.</p>
+                                        <div class="custom-social-links">
+                                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                                        </div>
+                                        <button class="custom-button custom-flip-buttonn">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-speaker-card">
+                                <div class="custom-card-inner">
+                                    <div class="custom-card-front">
+                                        <img  class="photo" src="img/photo5.png" alt="Speaker Photo">
+                                        <h2>Jane Doe</h2>
+                                        <button class="custom-button custom-flip-buttonn">Tap to see more</button>
+                                    </div>
+                                    <div class="custom-card-back">
+                                        <h3>Jane Doe</h3>
+                                        <p>Jane is a software engineer at Google, focusing on scalable web applications and cloud infrastructure.</p>
+                                        <div class="custom-social-links">
+                                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                                        </div>
+                                        <button class="custom-button custom-flip-buttonn">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-speaker-card">
+                                <div class="custom-card-inner">
+                                    <div class="custom-card-front">
+                                        <img class="photo" src="img/member-3.png" alt="Speaker Photo">
+                                        <h2>John Smith</h2>
+                                        <button class="custom-button custom-flip-buttonn">Tap to see more</button>
+                                    </div>
+                                    <div class="custom-card-back">
+                                        <h3>John Smith</h3>
+                                        <p>John is a cybersecurity expert and the CTO of CyberSafe, with over 20 years of experience in the industry.</p>
+                                        <div class="custom-social-links">
+                                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                                        </div>
+                                        <button class="custom-button custom-flip-buttonn">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-speaker-card">
+                                <div class="custom-card-inner">
+                                    <div class="custom-card-front">
+                                        <img class="photo" class="img" src="img/photo3.png" alt="Speaker Photo">
+                                        <h2>Mary Johnson</h2>
+                                        <button class="custom-button custom-flip-buttonn">Tap to see more</button>
+                                    </div>
+                                    <div class="custom-card-back">
+                                        <h3>Mary Johnson</h3>
+                                        <p>Mary is the CEO of Innovate Inc., driving forward innovative solutions in the tech industry.</p>
+                                        <div class="custom-social-links">
+                                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                                        </div>
+                                        <button class="custom-button custom-flip-buttonn">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            document.querySelectorAll('.custom-flip-buttonn').forEach(button => {
+                                button.addEventListener('click', () => {
+                                    button.closest('.custom-card-inner').classList.toggle('is-flipped');
+                                });
+                            });
+                        </script>
+            </section>
+                    
+            </div>-->
+
+
+            <footer>
+               
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: <a href="mailto:awsstudentcommunitykenya@gmail.com"
+                                style="color: orange">awsstudentcommunitykenya@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Social Media</h3>
+                        <ul class="social-links">
+                            <li><a href="https://x.com/awscloudclubKE?t=CueuSt-PUjy9nxyBgRjDTA&s=08"
+                                    target="_blank"><img src="img/twitter.png" alt="Twitter"></a></li>
+                            <li><a href="https://www.linkedin.com/in/aws-student-community-kenya-136556307/"
+                                    target="_blank"><img src="img/image.png" alt="LinkedIn"></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 AWS Student Community Day Kenya. All Rights Reserved.</p>
+                </div>
+            </footer>
+
+
+
+
+    </main>
+    <script src="script.js">
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+
+        document.querySelectorAll('.custom-flip-button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.closest('.custom-card-inner').classList.toggle('is-flipped');
+            });
+        });
+    </script>
+</body>
+
+</html>

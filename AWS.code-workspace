@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../AWS-Students-community-day2024/public"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AWS"
+	}
+}
